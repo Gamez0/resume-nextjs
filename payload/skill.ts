@@ -1,62 +1,10 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const backend: ISkill.Skill = {
-  category: 'Back-end',
-  items: [
-    {
-      title: 'Node.js',
-      level: 3,
-    },
-    {
-      title: 'AWS',
-      level: 3,
-    },
-    {
-      title: 'PHP',
-      level: 2,
-    },
-    {
-      title: 'Java',
-      level: 1,
-    },
-    {
-      title: 'Python',
-      level: 1,
-    },
-    {
-      title: 'C/C++',
-      level: 1,
-    },
-  ],
-};
-
-const database: ISkill.Skill = {
-  category: 'Database',
-  items: [
-    {
-      title: 'MySQL',
-      level: 3,
-    },
-    {
-      title: 'Oracle',
-      level: 2,
-    },
-    {
-      title: 'Redis',
-      level: 2,
-    },
-    {
-      title: 'MongoDB',
-      level: 1,
-    },
-  ],
-};
-
 const frontend: ISkill.Skill = {
   category: 'Front-end',
   items: [
     {
-      title: 'Next.js',
+      title: 'React Native',
       level: 2,
     },
     {
@@ -64,12 +12,62 @@ const frontend: ISkill.Skill = {
       level: 2,
     },
     {
+      title: 'Typescript',
+      level: 2,
+    },
+    {
       title: 'javascript',
+      level: 2,
+    },
+    {
+      title: 'MobX',
       level: 2,
     },
     {
       title: 'HTML/CSS',
       level: 2,
+    },
+    {
+      title: 'Electron',
+      level: 2,
+    },
+    {
+      title: 'Android/Java',
+      level: 1,
+    },
+    {
+      title: 'Flutter/Dart',
+      level: 1,
+    },
+    {
+      title: 'Next.js',
+      level: 1,
+    },
+    {
+      title: 'Redux',
+      level: 1,
+    },
+    {
+      title: 'React query',
+      level: 1,
+    },
+  ],
+};
+
+const backend: ISkill.Skill = {
+  category: 'Back-end',
+  items: [
+    {
+      title: 'Node.js',
+      level: 1,
+    },
+    {
+      title: 'GCP',
+      level: 1,
+    },
+    {
+      title: 'MySQL',
+      level: 1,
     },
   ],
 };
@@ -78,30 +76,32 @@ const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
     {
-      title: 'Ubuntu',
+      title: 'Figma',
     },
     {
-      title: 'Vim',
-    },
-    {
-      title: 'Security',
+      title: 'Source Tree',
     },
     {
       title: 'VS Code',
     },
     {
-      title: 'Jira',
+      title: 'GitLab',
     },
     {
-      title: 'Confluence',
+      title: 'Slack',
     },
   ],
 };
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, frontend, etc],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  skills: [frontend, backend, etc],
+  tooltip: '1: Basic\n2: Demonstrating\n3: Proficient',
+  detail: [
+    '관련 지식이나 경험이 매우 제한적이며\n기본적인 업무 수행에도 상당한 도움이 필요한 수준.\n업무 관련 꾸준한 학습이 필요함.',
+    '기본적인 업무 수행이 가능, 매우 능숙하진 않으나 경험이 있음. 업무 수행을 위해 추가적인 학습이나 타인의 도움이 필요할 수 있음',
+    '관련 지식과 경험이 풍부한 편이며\n능숙하게 업무 가능한 수준.\n업무 수행에 특별히 도움이 필요 없음.',
+  ],
 };
 
 export default skill;
