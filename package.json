@@ -1,6 +1,6 @@
 {
   "name": "resume-nextjs",
-  "lastestUpdatedAt": "2021-09-01",
+  "lastestUpdatedAt": "2022-05-03",
   "version": "1.2.0",
   "description": "Static HTML based RESUME made with next.js",
   "main": "index.js",
@@ -18,7 +18,7 @@
     "lint": "eslint \"component/**/*\" \"pages/**/*\" \"payload/**/*\" \"*.ts\" --fix",
     "typedoc": "typedoc --excludeExternals"
   },
-  "homepage": "https://uyu423.github.io/resume-nextjs",
+  "homepage": "https://github.com/Gamez0/resume-nextjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uyu423/resume-nextjs.git"
@@ -31,6 +31,10 @@
     "name": "Yowu Yu",
     "email": "me@yowu.dev",
     "url": "https://yowu.dev"
+  },
+  "particpant": {
+    "name": "Dobin Shin",
+    "email": "dobinshin@gmail.com"
   },
   "contributors": [],
   "license": "MIT",
