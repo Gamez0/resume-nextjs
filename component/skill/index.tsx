@@ -1,12 +1,13 @@
-import { Row, Col, Tooltip } from 'reactstrap';
-import { PropsWithChildren, useState } from 'react';
-import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Row, Col } from 'reactstrap';
+import { PropsWithChildren } from 'react';
+
 import { Style } from '../common/Style';
 import { ISkill } from './ISkill';
 import SkillRow from './row';
 import { EmptyRowCol } from '../common';
 import { PreProcessingComponent } from '../common/PreProcessingComponent';
+import Detail from './detail';
+import createTooltip from './createToolTip';
 
 type Payload = ISkill.Payload;
 
@@ -31,35 +32,13 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
             </h2>
           </Col>
         </Row>
+
+        <Detail payload={payload} />
+
         {payload.skills.map((skill, index) => (
           <SkillRow key={index.toString()} skill={skill} index={index} />
         ))}
       </EmptyRowCol>
     </div>
-  );
-}
-
-function createTooltip(content?: string) {
-  if (!content) {
-    return '';
-  }
-
-  const [tooltipOpen, setTooltipOpen] = useState(false);
-  const toggle = () => setTooltipOpen(!tooltipOpen);
-
-  return (
-    <small>
-      {' '}
-      <FontAwesomeIcon icon={faQuestionCircle} id="skill-tooltip" />
-      <Tooltip
-        style={{ whiteSpace: 'pre-wrap' }}
-        placement="right"
-        target="skill-tooltip"
-        isOpen={tooltipOpen}
-        toggle={toggle}
-      >
-        {content}
-      </Tooltip>
-    </small>
   );
 }

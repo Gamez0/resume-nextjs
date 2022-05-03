@@ -1,8 +1,9 @@
 import { PropsWithChildren } from 'react';
-import { Row, Col, Badge } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { ISkill } from './ISkill';
 import { Style } from '../common/Style';
 import Util from '../common/Util';
+import createBadge from './createBadge';
 
 export default function SkillRow({
   skill,
@@ -63,34 +64,5 @@ function createCalculatedSkillItems(items: ISkill.Item[]) {
         );
       })}
     </Row>
-  );
-}
-
-function createBadge(level?: ISkill.Item['level']) {
-  if (!level) {
-    return '';
-  }
-
-  const color = (() => {
-    switch (level) {
-      case 3: {
-        return 'primary';
-      }
-      case 2: {
-        return 'secondary';
-      }
-      case 1:
-      default: {
-        return 'light';
-      }
-    }
-  })();
-
-  return (
-    <span>
-      <Badge pill color={color}>
-        {level}
-      </Badge>{' '}
-    </span>
   );
 }
