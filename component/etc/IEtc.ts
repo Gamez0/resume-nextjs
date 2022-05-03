@@ -14,6 +14,7 @@ export declare namespace IEtc {
   }
 
   export interface Item {
+    key: number;
     /** ### 기타 항목 제목 */
     title: string;
 
