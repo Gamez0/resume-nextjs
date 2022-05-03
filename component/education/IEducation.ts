@@ -14,6 +14,7 @@ export declare namespace IEducation {
   }
 
   export interface Item {
+    key: number;
     /** ### 수료 교육 명 */
     title: string;
 
