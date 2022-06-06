@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
       startedAt: '2021-01',
       descriptions: [
         '대외용 매장POS 앱, Wapl Shop ver 2 선주문 화면 개발',
-        '사내 카페를 위한 Wapl Shop 출시 및 유지 보수',
+        '사내 카페 POS시스템, Wapl Shop 출시 및 유지 보수',
         '사내 카페 주문을 위한 Wapl Pay 개발 및 출시',
         '신한 텔러 외부 과제 공모',
         '웹/서버 통합 개발 툴, TOP Web Studio 유지보수',
@@ -18,10 +18,10 @@ const experience: IExperience.Payload = {
       skillKeywords: [
         'React Native',
         'React',
-        'Electron',
         'MobX',
+        'Jest',
+        'Electron',
         'Reanimated API',
-        // 'axios',
         'TypeScript',
       ],
     },

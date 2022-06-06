@@ -24,6 +24,10 @@ const frontend: ISkill.Skill = {
       level: 2,
     },
     {
+      title: 'Reanimated API',
+      level: 2,
+    },
+    {
       title: 'HTML/CSS',
       level: 2,
     },
@@ -76,6 +80,9 @@ const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
     {
+      title: 'jest',
+    },
+    {
       title: 'Figma',
     },
     {
@@ -89,6 +96,9 @@ const etc: ISkill.Skill = {
     },
     {
       title: 'Slack',
+    },
+    {
+      title: 'postman',
     },
   ],
 };

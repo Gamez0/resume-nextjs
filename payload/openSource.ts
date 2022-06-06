@@ -30,6 +30,17 @@ const openSource: IOpenSource.Payload = {
       ],
     },
     {
+      title: '캡스톤',
+      descriptions: [
+        {
+          content: 'LSTM 모델과 music21을 이용하여 국악 작곡 프로젝트',
+        },
+        {
+          content: '6가지 주 감정으로 분류된 음악 작곡',
+        },
+      ],
+    },
+    {
       title: 'ko.mobx.js.org',
       descriptions: [
         { content: 'Open source project contribution' },
