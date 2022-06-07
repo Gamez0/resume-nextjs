@@ -64,6 +64,13 @@ export declare namespace IRow {
      * @description 여러 계층을 가지는 `<ul>` 태그 구현을 위해 Recursion 형태로 구현됨
      */
     descriptions?: Description[];
+
+    /**
+     * ### 첨부한 이미지가 세로로 긴 모바일 이미지일 경우
+     *
+     * @description 이미지의 style을 다르게 적용하기 위함
+     */
+    isMobileImage?: boolean;
   }
 
   export type FontWeightType = 'DEFAULT' | 'LIGHT' | 'REGULAR' | 'MEDIUM' | 'BOLD';

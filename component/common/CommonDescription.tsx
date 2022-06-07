@@ -60,13 +60,14 @@ function DescriptionRecursion({
 }
 
 function Description({ description }: PropsWithChildren<{ description: IRow.Description }>) {
-  const { content, href, postImage, postHref, weight } = description;
+  const { content, href, postImage, postHref, weight, isMobileImage } = description;
 
   const component = (() => {
     if (href && postImage) {
       return (
         <li style={getFontWeight(weight)}>
-          <HrefTargetBlank url={href} text={content} /> <img src={postImage} alt={postImage} />
+          <HrefTargetBlank url={href} text={content} />{' '}
+          <img style={setImageSize(isMobileImage)} src={postImage} alt={postImage} />
         </li>
       );
     }
@@ -81,7 +82,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
       return (
         <li style={getFontWeight(weight)}>
           {content} <HrefTargetBlank url={postHref} text={postHref} />{' '}
-          <img src={postImage} alt={postImage} />
+          <img style={setImageSize(isMobileImage)} src={postImage} alt={postImage} />
         </li>
       );
     }
@@ -95,7 +96,7 @@ function Description({ description }: PropsWithChildren<{ description: IRow.Desc
     if (postImage) {
       return (
         <li style={getFontWeight(weight)}>
-          {content} <img src={postImage} alt={postImage} />
+          {content} <img style={setImageSize(isMobileImage)} src={postImage} alt={postImage} />
         </li>
       );
     }
@@ -112,6 +113,18 @@ function getFontWeight(weight?: IRow.Description['weight']): CSSProperties {
   }
   return {
     fontWeight: fontWeight[weight || 'DEFAULT'],
+  };
+}
+
+function setImageSize(isMobileImage: boolean | undefined) {
+  if (isMobileImage) {
+    return {
+      width: '20vw',
+      // height: '20rem',
+    };
+  }
+  return {
+    width: '40vw',
   };
 }
 

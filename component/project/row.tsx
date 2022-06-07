@@ -30,7 +30,6 @@ function serialize(payload: IProject.Item): IRow.Payload {
     }
     return `${startedAt} ~`;
   })();
-
   return {
     left: {
       title,

@@ -11,6 +11,7 @@ const project: IProject.Payload = {
       descriptions: [
         {
           content: 'React Native와 Typescript 기반 매장POS 화면 개발',
+          postImage: 'http://drive.google.com/uc?export=view&id=1kfChjYXwRDoE80B7_0mpYLDqlDJTBTmT',
           descriptions: [
             { content: '메뉴 카테고리를 추가 화면/기능' },
             { content: '카테고리, 메뉴, 옵션 선택 화면' },
@@ -22,6 +23,7 @@ const project: IProject.Payload = {
         { content: 'REST API를 이용한 비동기 통신 처리' },
         { content: 'Figma 통해 UI/UX 소통' },
       ],
+      imageSrc: 'http://drive.google.com/uc?export=view&id=1kfChjYXwRDoE80B7_0mpYLDqlDJTBTmT',
     },
     {
       title: 'Wapl Shop 출시 및 유지 보수',
@@ -29,7 +31,10 @@ const project: IProject.Payload = {
       endedAt: '2022-03',
       where: '티맥스 에이아이',
       descriptions: [
-        { content: 'ElectronJS, React 기반 사내 카페 POS 화면 개발 및 유지 보수' },
+        {
+          content: 'ElectronJS, React 기반 사내 카페 POS 화면 개발 및 유지 보수',
+          postImage: 'http://drive.google.com/uc?export=view&id=1i_fu4cQMNw1IcwN7Kmki7QI1MyWPglw8',
+        },
         { content: 'MobX state 관리 라이브러리 사용하여 장바구니 state 관리' },
         {
           content: 'MobX패턴에 적합하게 컴포넌트 분리하는 리팩토링 작업',
@@ -37,6 +42,7 @@ const project: IProject.Payload = {
         },
         {
           content: 'Node JS를 이용한 db 쿼리 요청문 작성, 영수증 출력 구현',
+          postImage: 'http://drive.google.com/uc?export=view&id=1dd7f5o-6udV3R7OCzDmOrUhQdj2asOzz',
           descriptions: [
             { content: 'ipc 통신 기반 설계' },
             { content: 'Promise 객체를 사용하여 비동기 처리', weight: 'MEDIUM' },
@@ -60,6 +66,8 @@ const project: IProject.Payload = {
         {
           content:
             'Reanimated API를 이용한 숫자변환, 로딩, 진행도, 커피, Transition 애니메이션 개발',
+          postImage: 'http://drive.google.com/uc?export=view&id=1cV_NLL4vtbsVieQ9aGP2SfGA0VkRc6gw',
+          isMobileImage: true,
           descriptions: [
             {
               content: 'bridge 비동기 통신 구조의 단점을 극복하는 라이브러리 선택  ',

@@ -6,8 +6,9 @@ const introduce: IIntroduce.Payload = {
 
   contents: [
     'Pay & Shop 2개 프로젝트를 기획부터 출시까지한 경험이 있습니다.',
-    'React Native, React, TypeScript, Jest, Electron, MobX, Git, Figma등을 주로 사용했습니다. MobX 패턴에 맞도록 컴포넌트를 성능 최적화한 경험,  NodeJS환경도 포함된 Shop 프로젝트에서, Promise객체를 이용한 비동기 처리 경험이 있습니다.',
-    '저는 rough한 코드들이 스터디를 통해 최적화되어 가는 것을 좋아합니다. 움켜쥐지 않고 펴서 돕는 서비스를 개발하는 환경을 찾고 있습니다.',
+    'React Native에서 아키텍쳐 한계로 인한 frame drop이 없는 animation 개발한 경험이 있고, MobX패턴에 맞게 컴포넌트 구현과 성능 최적화 작업한 경험이 있습니다.',
+    'Jest를 프로젝트에 주도적으로 도입하여 테스트를 진행할 수 있는 환경 세팅을 했고, 현재는 Electron 프로젝트를 React Native로 imigration하는 작업을 진행하고 있습니다.',
+    '움켜쥐지 않고 펴서 돕는 서비스를 개발하는 환경을 찾고 있습니다.',
   ],
   // sign: 'Love poem',
   sign: particpant.name,
